@@ -7,11 +7,11 @@ namespace StudentExercises
     {
         public Cohort(string cohortName)
         {
-            this.name = cohortName;  
+            this.name = cohortName;
         }
         public string name { get; set; }
 
-        List<Student> students = new List<Student>();
+        public List<Student> students { get; set; } = new List<Student>();
 
         public void AddStudent(Student student)
         {
@@ -19,7 +19,8 @@ namespace StudentExercises
         }
         List<Instructor> instructors = new List<Instructor>();
 
-        public void addInstructor(Instructor instructor){
+        public void addInstructor(Instructor instructor)
+        {
             instructors.Add(instructor);
         }
 

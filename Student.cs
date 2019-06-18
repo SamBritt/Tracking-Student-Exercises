@@ -9,12 +9,15 @@ namespace StudentExercises
         {
             this.firstName = firstName;
             this.lastName = lastName;
+            this.CurrCohort = cohort;
         }
 
         public string firstName { get; set; }
         public string lastName { get; set; }
 
         private string slackHandle { get; set; }
+
+        public Cohort CurrCohort { get; set; }
 
         public string getSlackHandle()
         {
