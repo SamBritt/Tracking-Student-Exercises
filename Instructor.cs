@@ -3,7 +3,7 @@ using System;
 namespace StudentExercises
 {
 
-    class Instructor
+    public class Instructor : NSSPerson
     {
         public Instructor(string firstName, string lastName)
         {
@@ -11,20 +11,20 @@ namespace StudentExercises
             this.lastName = lastName;
         }
 
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        private string slackHandle { get; set; }
+        // public string firstName { get; set; }
+        // public string lastName { get; set; }
+        // private string slackHandle { get; set; }
         private string specialty { get; set; }
 
-        public string getSlackHandle()
-        {
-            return slackHandle;
-        }
+        // public string getSlackHandle()
+        // {
+        //     return slackHandle;
+        // }
         public string getSpeciality()
         {
             return specialty;
         }
-        public Cohort currentCohort { get; set; }
+        // public Cohort currentCohort { get; set; }
 
         public void assignExercise(Student student, Exercise exercise)
         {

@@ -2,7 +2,7 @@ using System;
 
 namespace StudentExercises
 {
-    class Exercise
+    public class Exercise
     {
         public Exercise(string name, string language)
         {

@@ -3,26 +3,26 @@ using System.Collections.Generic;
 
 namespace StudentExercises
 {
-    class Student
+    public class Student : NSSPerson
     {
         public Student(string firstName, string lastName, Cohort cohort)
         {
             this.firstName = firstName;
             this.lastName = lastName;
-            this.CurrCohort = cohort;
+            this.currentCohort = cohort;
         }
 
-        public string firstName { get; set; }
-        public string lastName { get; set; }
+        // public string firstName { get; set; }
+        // public string lastName { get; set; }
 
-        private string slackHandle { get; set; }
+        // private string slackHandle { get; set; }
 
-        public Cohort CurrCohort { get; set; }
+        // public Cohort currentCohort { get; set; }
 
-        public string getSlackHandle()
-        {
-            return slackHandle;
-        }
+        // public string getSlackHandle()
+        // {
+        //     return slackHandle;
+        // }
 
         public List<Exercise> exercises = new List<Exercise>();
 
